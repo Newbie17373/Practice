@@ -1,0 +1,111 @@
+@use 'sass:math';
+
+@mixin orange-button {
+    background-color: var(--main-color);
+    color: var(--first-color);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    line-height: 0.75rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contact__inside {
+        margin-top: 90px;
+        margin-bottom: 65px;
+    
+        .contact__title {
+
+        }
+
+        .contact__title.line::after {
+            bottom: -9.11px;
+            left: 47.5%;
+        }
+
+        @media(max-width: 768px) {
+            .contact__title.line::after{
+                left: 43.11%;
+            }
+        }
+        
+        .contact__text {
+        line-height: 1.75rem;
+        }
+        
+        .contact__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        }
+
+        .contact__form-inputs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 8px;
+            margin-bottom: 50px;
+        }
+        
+        @media(max-width: 576px) {
+            .contact__form-inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+        
+        .contact__form-input {
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        color: var(--third-color);
+        background-color: var(--fourth-color);
+        }
+        
+        .contact__form-textarea {
+        grid-column: 1/4;
+        padding: 8px;
+        border-radius: 5px;
+        color: var(--third-color);
+        background-color: var(--fourth-color);
+        height: 120px;
+        resize: none;
+        display: block;
+        }
+
+        @media(max-width: 576px) {
+            .contact__form-textarea {
+                margin-top: 4px;
+            }
+        }
+
+        .contact__form-input:focus, .contact__form-textarea:focus {
+            outline: 2px solid var(--main-color);
+            background-color: var(--first-color);
+        }
+        
+        .contact__form-button {
+        width: math.div(640px, 1440px) * 100%;
+        @include orange-button();
+        }
+
+        .contact__form-button:hover {
+            background-color: var(--first-color);
+            border: 1px solid var(--second-color);
+            color: var(--second-color);
+        }
+    }
+    }

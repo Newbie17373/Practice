@@ -1,0 +1,87 @@
+@use 'sass:math';
+
+.specialties {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/img/specialties.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--first-color);
+
+    .specialties__inside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        .specialties__subtitle {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            
+            .specialties__table {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            }
+            
+            .specialties__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+    
+            @media(max-width: 768px) {
+                .specialties__row {
+                    flex-direction: column-reverse;
+                    gap: 50px;
+                }
+            }
+            
+            .specialties__column {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: math.div(725px, 1440px) * 100%;
+            }
+    
+            @media(max-width: 768px) {
+                .specialties__column {
+                    width: 90%;
+                }
+            }
+            
+            .specialties__column_image {
+                width: math.div(575px, 1440px) * 100%;
+            }
+            
+            .specialties__image-item {
+            max-width: 100%;
+            }
+            
+            .specialties__title {
+            
+            }
+    
+            @media(max-width: 768px) {
+                .specialties__title.line:after{
+                    left: 40.11%;
+                }
+            }
+    
+            .specialties__title.line::after {
+                bottom: -9.11px;
+            }
+            
+            .specialties__text {
+            
+            }
+        }
+    }

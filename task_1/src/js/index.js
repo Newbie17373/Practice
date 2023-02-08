@@ -1,2 +1,2 @@
 import '@/styles/style.scss'
-import '@/burger.js'
+import '@/js/burger.js'

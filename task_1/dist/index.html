@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Ресторан FANCY SAILOR. Заказать столик в ресторане. Кафе. Ресторан.">
+    <title>FANCY SAILOR - restaurant</title>
+    <link rel="icon" href="favicon.svg" type="image/webp">
+    <meta>
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inside container">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="" class="header__list-link">HOME</a></li>
+                        <li class="header__list-item"><a href="#about" class="header__list-link">ABOUT</a></li>
+                        <li class="header__list-item"><a href="" class="header__list-link">TEAM</a></li>
+                        <li class="header__list-item"><a href="#bookTable" class="header__list-link">BOOKING</a></li>
+                        <img src="favicon.svg" alt="" class="header__logo">
+                        <li class="header__list-item"><a href="" class="header__list-link">MENU</a></li>
+                        <li class="header__list-item"><a href="" class="header__list-link">GALERIE</a></li>
+                        <li class="header__list-item"><a href="" class="header__list-link">EVENTS</a></li>
+                        <li class="header__list-item"><a href="#contact" class="header__list-link">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="intro">
+                <div class="intro__inside container">
+                    <h4 class="intro__subtitle subtitle">restaurant</h4>
+                    <h1 class="intro__heading line">Fancy SaIlor</h1>
+                    <div class="intro__buttons">
+                        <a href="#bookTable" class="intro__buttons-item intro__buttons-item_colorized">BOOK TABLE</a>
+                        <a href="#" class="intro__buttons-item intro__buttons-item_empty">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about" id="about">
+                <div class="about__inside container">
+                    <div class="about__block about__block_first">
+                        <div class="about__row about__row_first">
+                            <div class="about__column">
+                                <h2 class="about__title line block__title block__title_black">about us</h2>
+                                <p class="about__text text"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugit hic neque magni qui repudiandae ducimus minima ex est tempora.</b>
+                                <br><br>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                            <div class="about__column about__column_image">
+                                <img src="about-img.webp" alt="" class="about__image-item">
+                            </div>
+                        </div>
+                        <div class="about__row about__row_second" id="bookTable">
+                            <div class="about__column">
+                                <h2 class="about__title line block__title block__title_black">book a table</h2>
+                                <form action="" enctype="multipart/form-data" method="" name="" target="" class="about__form">
+                                    <div><input required type="text" name="name" value="" class="about__form-input" placeholder="Name"></div>
+                                    <div><input required type="email" name="email" value="" class="about__form-input" placeholder="Email"></div>
+                                    <div><input required type="tel" name="phone" value="" class="about__form-input" placeholder="Phone"></div>
+                                    <div class="div_wrap">
+                                        <select required type="number" name="people" value="" size="1" class="about__form-input about__form-input_select">
+                                            <option selected value=""></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <label for="" class="label">People</label>
+                                    </div>
+                                    <div><input required type="date" name="date" value="" class="about__form-input" placeholder="Date(mm/dd)"></div>
+                                    <div class="div_wrap">
+                                            <select required name="time" value="" size="1" class="about__form-input about__form-input_select">
+                                                <option selected value=""></option>
+                                                <option value="1">18:00</option>
+                                                <option value="2">18:30</option>
+                                                <option value="3">19:00</option>
+                                                <option value="4">19:30</option>
+                                                <option value="5">20:00</option>
+                                                <option value="6">20:30</option>
+                                                <option value="7">21:00</option>
+                                                <option value="8">21:30</option>
+                                                <option value="9">22:00</option>
+                                                <option value="10">22:30</option>
+                                                <option value="9">23:00</option>
+                                                <option value="10">23:30</option>
+                                            </select>
+                                            <label for="" class="label">Time</label>
+                                    </div>
+                                    <button type="submit" class="about__form-button">book now</button>
+                                </form>
+                            </div>
+                            <div class="about__column about__column_image">
+                                <img src="about-img-2.webp" alt="" class="about__image-item">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__block about__block_second">
+                        <p class="about__subtext"> Mon - Fri: <b>8PM - 10PM,</b> Sat - Sun: <b>8PM - 3AM,</b> Phone: <b> +40 729 131 637/+40 726 458 782 </b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="specialties">
+                <div class="specialties__inside container">
+                    <div class="specialties__subtitle subtitle">specialties</div>
+                    <div class="specialties__table">
+                        <div class="specialties__row">
+                            <div class="specialties__column specialties__column_image">
+                                <img src="dish.webp" alt="" class="specialties__image-item">
+                            </div>
+                            <div class="specialties__column">
+                                <h2 class="specialties__title line block__title block__title_white">chocolate pancakes</h2>
+                                <p class="specialties__text text"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</b>
+                                <br><br>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <div class="contact__inside container">
+                    <h2 class="contact__title line block__title block__title_black">contact</h2>
+                    <p class="contact__text text"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis <br> at velit maximus, molestie est a, tempor magna.</b></p>
+                    <form action="" enctype="" target="" method="" name=""  class="contact__form">
+                        <div class="contact__form-inputs">
+                        <div><input required type="text" name="name" value="" class="contact__form-input" placeholder="Name"></div>
+                        <div><input required type="email" name="email" value="" class="contact__form-input" placeholder="Email"></div>
+                        <div><input required type="tel" name="phone" value="" class="contact__form-input" placeholder="Phone"></div>
+                        <textarea required name="message" id="" class="contact__form-textarea" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="contact__form-button">send message</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__inside container">
+                <p class="footer__text">© Copyright <b>Fancy Sailor</b> 2023</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

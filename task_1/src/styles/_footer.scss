@@ -1,0 +1,18 @@
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fifth-color);
+     
+     .footer__inside {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 90px;
+ color: var(--sixth-color);
+ font-size: 0.75rem;
+ line-height: 0.75rem;
+ text-align: center;
+     }
+ }
