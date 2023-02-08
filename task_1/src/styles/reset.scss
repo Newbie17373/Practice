@@ -1,0 +1,52 @@
+html {
+
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.25ms 0s linear;
+}
+
+a, li, ul, ol {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited, a:hover {
+    color: inherit
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input, button, textarea {
+    border: none;
+}
+
+*::selection, *::-moz-selection{
+    background-color: var(--main-color);
+    color: #02070D;
+    }
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: #051323;
+    box-shadow: 0 0 2px rgba(0,0,0,.2) inset;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, var(--main-color), var(--submain-color));
+        opacity: 25%;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, var(--main-color), var(--submain-color));
+    }
